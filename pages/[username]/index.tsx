@@ -32,7 +32,7 @@ export default function UserProfilePage({ user, posts }) {
   return (
     <div>
       <UserProfile user={user} />
-      <PostFeed posts={posts} />
+      <PostFeed posts={posts} admin />
     </div>
   );
 }
