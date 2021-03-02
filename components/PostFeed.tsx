@@ -32,7 +32,7 @@ function PostItem({ admin = false, post }) {
         <span>
           {wordCount} words. {minsToRead} min read
         </span>
-        <span className="push-left">💗 {post.heartCount || 0} Hearts</span>
+        <span className="push-left"> ❤️ {post.heartCount || 0} Hearts</span>
       </footer>
     </div>
   );

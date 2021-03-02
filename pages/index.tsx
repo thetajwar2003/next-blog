@@ -57,7 +57,7 @@ export default function Home(props) {
   };
 
   return (
-    <div>
+    <main>
       <PostFeed posts={posts} admin />
       {!loading && !postsEnd && (
         <button onClick={getMorePosts}>Load More</button>
@@ -65,6 +65,6 @@ export default function Home(props) {
       <Loader show={loading} />
 
       {postsEnd && "You have reached the end!"}
-    </div>
+    </main>
   );
 }
