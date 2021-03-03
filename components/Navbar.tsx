@@ -15,7 +15,7 @@ export default function Navbar() {
         {/* user is signed in and has username */}
         {username && (
           <>
-            <li>
+            <li className="push-left">
               <Link href="/admin">
                 <button className="btn-blue">Write Posts</button>
               </Link>
