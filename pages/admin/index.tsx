@@ -1,10 +1,11 @@
 import Head from "next/head";
 import React from "react";
+import AuthCheck from "../../components/AuthCheck";
 
-export default function AdminsPostPage() {
+export default function AdminsPostPage(props) {
   return (
     <main>
-      <h1>Admin Post</h1>
+      <AuthCheck></AuthCheck>
     </main>
   );
 }
