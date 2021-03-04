@@ -2,12 +2,14 @@ import React, { useContext, useState, useEffect, useCallback } from "react";
 import { UserContext } from "../lib/context";
 import { auth, firestore, googleAuthProvider } from "../lib/firebase";
 import debounce from "lodash.debounce";
+import Metatags from "../components/Metatags";
 
 export default function EnterPage() {
   const { user, username } = useContext(UserContext);
 
   return (
-    <div>
+    <main>
+      <Metatags title="Enter" description="Sign up for this amazing app!" />
       {user ? (
         !username ? (
           <UsernameForm />
@@ -17,7 +19,7 @@ export default function EnterPage() {
       ) : (
         <SignInButton />
       )}
-    </div>
+    </main>
   );
 }
 

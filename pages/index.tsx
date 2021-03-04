@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 import Loader from "../components/Loader";
 import { firestore, fromMillis, postToJSON } from "../lib/firebase";
 import PostFeed from "../components/PostFeed";
+import Metatags from "../components/Metatags";
 
 // Max post to query per page
 const LIMIT = 1;
@@ -58,6 +59,10 @@ export default function Home(props) {
 
   return (
     <main>
+      <Metatags
+        title="Home Page"
+        description="Get the latest posts on our site"
+      />
       <PostFeed posts={posts} admin />
       {!loading && !postsEnd && (
         <button onClick={getMorePosts}>Load More</button>
