@@ -62,6 +62,7 @@ export default function Home(props) {
       <Metatags
         title="Home Page"
         description="Get the latest posts on our site"
+        image={null}
       />
       <PostFeed posts={posts} admin />
       {!loading && !postsEnd && (
