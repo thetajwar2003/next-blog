@@ -9,7 +9,11 @@ export default function EnterPage() {
 
   return (
     <main>
-      <Metatags title="Enter" description="Sign up for this amazing app!" />
+      <Metatags
+        title="Enter"
+        description="Sign up for this amazing app!"
+        image={null}
+      />
       {user ? (
         !username ? (
           <UsernameForm />

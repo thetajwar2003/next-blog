@@ -42,6 +42,7 @@ export default function UserProfilePage({ user, posts }) {
       <Metatags
         title={user.username}
         description={`${user.username}'s public profile`}
+        image={null}
       />
       <UserProfile user={user} />
       <PostFeed posts={posts} admin />

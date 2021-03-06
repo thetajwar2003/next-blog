@@ -55,7 +55,7 @@ export default function PostPage(props) {
   const post = realTimePost || props.post;
   return (
     <main className={styles.container}>
-      <Metatags title={post.title} description={post.title} />
+      <Metatags title={post.title} description={post.title} image={null} />
       <section>
         <PostContent post={post} />
       </section>
